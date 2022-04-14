@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>测试</title>
+</head>
+
+<body>
+    <style id="demo2"></style>
+    <div id="demo"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+
+
+    <style>#buttons {
+  z-index: 5;
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#buttons > button {
+  text-indent: 0;
+  color: #fff;
+  width: 80px;
+  background: #ff5bb0 -webkit-gradient(linear, left top, left bottom, color-stop(.05, #ff5bb0), to(#ef027d));
+  border: 1px solid #ee1eb5;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 8px 10px;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#buttons > button:focus {
+  box-shadow: 3px 3px 3px #00000080;
+}
+
+#html {
+  width: 100%;
+  height: 50vh;
+  position: fixed;
+  bottom: 200px;
+  left: 0;
+}
+
+#demo {
+  height: 50vh;
+  width: 100%;
+  border: 1px solid green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+#demo::-webkit-scrollbar {
+  display: none;
+}
+
+#demo2 {
+  display: none;
+}
+
+</style>
+    
+    <div id="html">
+        <div id="head">
+            <div class="face">
+                <div class="hair"></div>
+                <div class="eyebrowLeft"></div>
+                <div class="eyebrowRight"></div>
+                <div class="eyeLeft"></div>
+                <div class="eyeRight"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/test.c860f2e8.js"></script>
+</body>
+
+</html>
